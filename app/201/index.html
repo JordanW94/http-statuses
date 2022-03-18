@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>201 Created &mdash; http-statuses.com</title>
+    <link rel="shortcut icon" href="../favicon-2c8f09ecdff4f6b2ee66cc6a3c000019.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style-7660fbe4c65b9899ac7a503852f332a3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="HTTP Status Code 201: The request has been fulfilled and has resulted in one or more new resources being created.">
+  </head>
+  <body>
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns">
+            <p><a href="/">&larr; Return to http-statuses.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+	<div class="share">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns"><a href="#" onclick="RedirectURL();return false;" >&commat; Share on Twitter</a></div>
+        </div>
+      </div>
+    </div>
+    <article class="code container">
+      <h2>2&times;&times; Success</h2>
+      <h1><span>201</span> Created</h1><p>The request has been fulfilled and has resulted in one or more new resources being created.</p>
+<p>The primary resource created by the request is identified by either a Location header field in the response or, if no Location field is received, by the effective request URI.</p>
+<p>The 201 response payload typically describes and links to the resource(s) created. See <a href="https://tools.ietf.org/html/rfc7231#section-7.2">Section 7.2 of RFC7231</a> for a discussion of the meaning and purpose of validator header fields, such as ETag and Last-Modified, in a 201 response.</p>
+<hr>
+<ul>
+<li>Source: <a href="https://tools.ietf.org/html/rfc7231#section-6.3.2">RFC7231 Section 6.3.2</a></li>
+</ul>
+
+      <h1 class="section"><span>201</span> Code References</h1>
+      <p>Rails HTTP Status Symbol <code>:created</code></p>
+      <p>Go HTTP Status Constant <code>http.StatusCreated</code></p>
+      <p>Symfony HTTP Status Constant <code>Response::HTTP_CREATED</code></p>
+      <p>Python2 HTTP Status Constant <code>httplib.CREATED</code></p>
+      <p>Python3+ HTTP Status Constant <code>http.client.CREATED</code></p>
+      <p>Python3.5+ HTTP Status Constant <code>http.HTTPStatus.CREATED</code></p><a href="/">&larr; Return to http-statuses.com</a>
+    </article>
+	<script>
+		function RedirectURL()
+		{
+			window.open(createDynamicURL(), "_blank");
+		}
+		
+		function createDynamicURL()
+		{
+			//The variable to be returned
+			var URL;
+
+			//The variables containing the respective IDs
+			var statusCode=window.location.pathname.replaceAll("/", "")
+
+			//Forming the variable to return    
+			URL = "https://twitter.com/intent/tweet?hashtags=httpstatuses&text=Status%20Code%3A%20"+encodeURIComponent(statusCode)+"%0AHelpful%20HTTP%20Status%20Code%20reference%20site&url=https%3A%2F%2Fhttp-stat.us%2F"+encodeURIComponent(statusCode);
+			
+			console.log(URL);
+
+			return URL;
+		}
+	</script>
+  </body>
+</html>

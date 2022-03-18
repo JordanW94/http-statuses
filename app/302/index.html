@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>302 Found &mdash; http-statuses.com</title>
+    <link rel="shortcut icon" href="../favicon-2c8f09ecdff4f6b2ee66cc6a3c000019.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style-7660fbe4c65b9899ac7a503852f332a3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="HTTP Status Code 302: The target resource resides temporarily under a different URI. Since the redirection might be altered on occasion, the client ought to continue to use the effective request URI for future requests.">
+  </head>
+  <body>
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns">
+            <p><a href="/">&larr; Return to http-statuses.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+	<div class="share">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns"><a href="#" onclick="RedirectURL();return false;" >&commat; Share on Twitter</a></div>
+        </div>
+      </div>
+    </div>
+    <article class="code container">
+      <h2>3&times;&times; Redirection</h2>
+      <h1><span>302</span> Found</h1><p>The target resource resides temporarily under a different URI. Since the redirection might be altered on occasion, the client ought to continue to use the effective request URI for future requests.</p>
+<p>The server SHOULD generate a Location header field in the response containing a URI reference for the different URI. The user agent MAY use the Location field value for automatic redirection. The server&#39;s response payload usually contains a short hypertext note with a hyperlink to the different URI(s).</p>
+<p>Note: For historical reasons, a user agent MAY change the request method from POST to GET for the subsequent request. If this behavior is undesired, the <a href="/307">307 Temporary Redirect</a> status code can be used instead.</p>
+<hr>
+<ul>
+<li>Source: <a href="https://tools.ietf.org/html/rfc7231#section-6.4.3">RFC7231 Section 6.4.3</a></li>
+</ul>
+
+      <h1 class="section"><span>302</span> Code References</h1>
+      <p>Rails HTTP Status Symbol <code>:found</code></p>
+      <p>Go HTTP Status Constant <code>http.StatusFound</code></p>
+      <p>Symfony HTTP Status Constant <code>Response::HTTP_FOUND</code></p>
+      <p>Python2 HTTP Status Constant <code>httplib.FOUND</code></p>
+      <p>Python3+ HTTP Status Constant <code>http.client.FOUND</code></p>
+      <p>Python3.5+ HTTP Status Constant <code>http.HTTPStatus.FOUND</code></p><a href="/">&larr; Return to http-statuses.com</a>
+    </article>
+	<script>
+		function RedirectURL()
+		{
+			window.open(createDynamicURL(), "_blank");
+		}
+		
+		function createDynamicURL()
+		{
+			//The variable to be returned
+			var URL;
+
+			//The variables containing the respective IDs
+			var statusCode=window.location.pathname.replaceAll("/", "")
+
+			//Forming the variable to return    
+			URL = "https://twitter.com/intent/tweet?hashtags=httpstatuses&text=Status%20Code%3A%20"+encodeURIComponent(statusCode)+"%0AHelpful%20HTTP%20Status%20Code%20reference%20site&url=https%3A%2F%2Fhttp-stat.us%2F"+encodeURIComponent(statusCode);
+			
+			console.log(URL);
+
+			return URL;
+		}
+	</script>
+  </body>
+</html>

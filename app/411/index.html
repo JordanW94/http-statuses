@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>411 Length Required &mdash; http-statuses.com</title>
+    <link rel="shortcut icon" href="../favicon-2c8f09ecdff4f6b2ee66cc6a3c000019.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style-7660fbe4c65b9899ac7a503852f332a3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="HTTP Status Code 411: The server refuses to accept the request without a defined Content-Length1.">
+  </head>
+  <body>
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns">
+            <p><a href="/">&larr; Return to http-statuses.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+	<div class="share">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns"><a href="#" onclick="RedirectURL();return false;" >&commat; Share on Twitter</a></div>
+        </div>
+      </div>
+    </div>
+    <article class="code container">
+      <h2>4&times;&times; Client Error</h2>
+      <h1><span>411</span> Length Required</h1><p>The server refuses to accept the request without a defined Content-Length<sup><a href="#ref-1">1</a></sup>.</p>
+<p>The client MAY repeat the request if it adds a valid Content-Length header field containing the length of the message body in the request message.</p>
+<hr>
+<ul>
+<li><span id="ref-1"><sup>1</sup> Content-Length <a href="https://tools.ietf.org/html/rfc7230#section-3.3.2">RFC7230 Section 3.3.2</a></span></li>
+<li>Source: <a href="https://tools.ietf.org/html/rfc7231#section-6.5.10">RFC7231 Section 6.5.10</a></li>
+</ul>
+
+      <h1 class="section"><span>411</span> Code References</h1>
+      <p>Rails HTTP Status Symbol <code>:length_required</code></p>
+      <p>Go HTTP Status Constant <code>http.StatusLengthRequired</code></p>
+      <p>Symfony HTTP Status Constant <code>Response::HTTP_LENGTH_REQUIRED</code></p>
+      <p>Python2 HTTP Status Constant <code>httplib.LENGTH_REQUIRED</code></p>
+      <p>Python3+ HTTP Status Constant <code>http.client.LENGTH_REQUIRED</code></p>
+      <p>Python3.5+ HTTP Status Constant <code>http.HTTPStatus.LENGTH_REQUIRED</code></p><a href="/">&larr; Return to http-statuses.com</a>
+    </article>
+	<script>
+		function RedirectURL()
+		{
+			window.open(createDynamicURL(), "_blank");
+		}
+		
+		function createDynamicURL()
+		{
+			//The variable to be returned
+			var URL;
+
+			//The variables containing the respective IDs
+			var statusCode=window.location.pathname.replaceAll("/", "")
+
+			//Forming the variable to return    
+			URL = "https://twitter.com/intent/tweet?hashtags=httpstatuses&text=Status%20Code%3A%20"+encodeURIComponent(statusCode)+"%0AHelpful%20HTTP%20Status%20Code%20reference%20site&url=https%3A%2F%2Fhttp-stat.us%2F"+encodeURIComponent(statusCode);
+			
+			console.log(URL);
+
+			return URL;
+		}
+	</script>
+  </body>
+</html>

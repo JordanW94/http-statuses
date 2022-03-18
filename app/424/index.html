@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>424 Failed Dependency &mdash; http-statuses.com</title>
+    <link rel="shortcut icon" href="../favicon-2c8f09ecdff4f6b2ee66cc6a3c000019.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style-7660fbe4c65b9899ac7a503852f332a3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="HTTP Status Code 424: The method could not be performed on the resource because the requested action depended on another action and that action failed.">
+  </head>
+  <body>
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns">
+            <p><a href="/">&larr; Return to http-statuses.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+	<div class="share">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns"><a href="#" onclick="RedirectURL();return false;" >&commat; Share on Twitter</a></div>
+        </div>
+      </div>
+    </div>
+    <article class="code container">
+      <h2>4&times;&times; Client Error</h2>
+      <h1><span>424</span> Failed Dependency</h1><p>The method could not be performed on the resource because the requested action depended on another action and that action failed.</p>
+<p>For example, if a command in a PROPPATCH method fails, then, at minimum, the rest of the commands will also fail with 424 Failed Dependency.</p>
+<hr>
+<ul>
+<li>Source: <a href="https://tools.ietf.org/html/rfc4918#section-11.4">RFC4918 Section 11.4</a></li>
+</ul>
+
+      <h1 class="section"><span>424</span> Code References</h1>
+      <p>Rails HTTP Status Symbol <code>failed_dependency</code></p>
+      <p>Symfony HTTP Status Constant <code>Response::HTTP_FAILED_DEPENDENCY</code></p>
+      <p>Python HTTP Status Constant <code>httplib.FAILED_DEPENDENCY</code></p><a href="/">&larr; Return to http-statuses.com</a>
+    </article>
+	<script>
+		function RedirectURL()
+		{
+			window.open(createDynamicURL(), "_blank");
+		}
+		
+		function createDynamicURL()
+		{
+			//The variable to be returned
+			var URL;
+
+			//The variables containing the respective IDs
+			var statusCode=window.location.pathname.replaceAll("/", "")
+
+			//Forming the variable to return    
+			URL = "https://twitter.com/intent/tweet?hashtags=httpstatuses&text=Status%20Code%3A%20"+encodeURIComponent(statusCode)+"%0AHelpful%20HTTP%20Status%20Code%20reference%20site&url=https%3A%2F%2Fhttp-stat.us%2F"+encodeURIComponent(statusCode);
+			
+			console.log(URL);
+
+			return URL;
+		}
+	</script>
+  </body>
+</html>

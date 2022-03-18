@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>507 Insufficient Storage &mdash; http-statuses.com</title>
+    <link rel="shortcut icon" href="../favicon-2c8f09ecdff4f6b2ee66cc6a3c000019.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style-7660fbe4c65b9899ac7a503852f332a3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="HTTP Status Code 507: The method could not be performed on the resource because the server is unable to store the representation needed to successfully complete the request.">
+  </head>
+  <body>
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns">
+            <p><a href="/">&larr; Return to http-statuses.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+	<div class="share">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns"><a href="#" onclick="RedirectURL();return false;" >&commat; Share on Twitter</a></div>
+        </div>
+      </div>
+    </div>
+    <article class="code container">
+      <h2>5&times;&times; Server Error</h2>
+      <h1><span>507</span> Insufficient Storage</h1><p>The method could not be performed on the resource because the server is unable to store the representation needed to successfully complete the request.</p>
+<p>This condition is considered to be temporary. If the request that received this status code was the result of a user action, the request MUST NOT be repeated until it is requested by a separate user action.</p>
+<hr>
+<ul>
+<li>Source: <a href="https://tools.ietf.org/html/rfc4918#section-11.5">RFC4918 Section 11.5</a></li>
+</ul>
+
+      <h1 class="section"><span>507</span> Code References</h1>
+      <p>Rails HTTP Status Symbol <code>:insufficient_storage</code></p>
+      <p>Symfony HTTP Status Constant <code>Response::HTTP_INSUFFICIENT_STORAGE</code></p><a href="/">&larr; Return to http-statuses.com</a>
+    </article>
+	<script>
+		function RedirectURL()
+		{
+			window.open(createDynamicURL(), "_blank");
+		}
+		
+		function createDynamicURL()
+		{
+			//The variable to be returned
+			var URL;
+
+			//The variables containing the respective IDs
+			var statusCode=window.location.pathname.replaceAll("/", "")
+
+			//Forming the variable to return    
+			URL = "https://twitter.com/intent/tweet?hashtags=httpstatuses&text=Status%20Code%3A%20"+encodeURIComponent(statusCode)+"%0AHelpful%20HTTP%20Status%20Code%20reference%20site&url=https%3A%2F%2Fhttp-stat.us%2F"+encodeURIComponent(statusCode);
+			
+			console.log(URL);
+
+			return URL;
+		}
+	</script>
+  </body>
+</html>

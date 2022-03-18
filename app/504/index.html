@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>504 Gateway Timeout &mdash; http-statuses.com</title>
+    <link rel="shortcut icon" href="../favicon-2c8f09ecdff4f6b2ee66cc6a3c000019.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style-7660fbe4c65b9899ac7a503852f332a3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="HTTP Status Code 504: The server, while acting as a gateway or proxy, did not receive a timely response from an upstream server it needed to access in order to complete the request.">
+  </head>
+  <body>
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns">
+            <p><a href="/">&larr; Return to http-statuses.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+	<div class="share">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns"><a href="#" onclick="RedirectURL();return false;" >&commat; Share on Twitter</a></div>
+        </div>
+      </div>
+    </div>
+    <article class="code container">
+      <h2>5&times;&times; Server Error</h2>
+      <h1><span>504</span> Gateway Timeout</h1><p>The server, while acting as a gateway or proxy, did not receive a timely response from an upstream server it needed to access in order to complete the request.</p>
+<hr>
+<ul>
+<li>Source: <a href="https://tools.ietf.org/html/rfc7231#section-6.6.5">RFC7231 Section 6.6.5</a></li>
+</ul>
+
+      <h1 class="section"><span>504</span> Code References</h1>
+      <p>Rails HTTP Status Symbol <code>:gateway_timeout</code></p>
+      <p>Go HTTP Status Constant <code>http.StatusGatewayTimeout</code></p>
+      <p>Symfony HTTP Status Constant <code>Response::HTTP_GATEWAY_TIMEOUT</code></p>
+      <p>Python2 HTTP Status Constant <code>httplib.GATEWAY_TIMEOUT</code></p>
+      <p>Python3+ HTTP Status Constant <code>http.client.GATEWAY_TIMEOUT</code></p>
+      <p>Python3.5+ HTTP Status Constant <code>http.HTTPStatus.GATEWAY_TIMEOUT</code></p><a href="/">&larr; Return to http-statuses.com</a>
+    </article>
+	<script>
+		function RedirectURL()
+		{
+			window.open(createDynamicURL(), "_blank");
+		}
+		
+		function createDynamicURL()
+		{
+			//The variable to be returned
+			var URL;
+
+			//The variables containing the respective IDs
+			var statusCode=window.location.pathname.replaceAll("/", "")
+
+			//Forming the variable to return    
+			URL = "https://twitter.com/intent/tweet?hashtags=httpstatuses&text=Status%20Code%3A%20"+encodeURIComponent(statusCode)+"%0AHelpful%20HTTP%20Status%20Code%20reference%20site&url=https%3A%2F%2Fhttp-stat.us%2F"+encodeURIComponent(statusCode);
+			
+			console.log(URL);
+
+			return URL;
+		}
+	</script>
+  </body>
+</html>

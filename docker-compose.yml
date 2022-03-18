@@ -1,0 +1,10 @@
+version: "3"
+services:
+  httpstatuses:
+    user: root
+    container_name: httpstatuses
+    privileged: true
+    image: jwhitbread/http-statuses:dev
+    restart: unless-stopped
+    ports:
+      - 80:80
